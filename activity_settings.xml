@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings"
+    android:orientation="vertical"
+    android:weightSum="35"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+     >
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="5"
+        android:orientation="horizontal">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:text="Settings"
+               android:textColor="#000000"
+               android:textSize="23.41sp"
+               android:layout_weight="3"
+               app:autoSizeMaxTextSize="100sp"
+               app:autoSizeMinTextSize="5sp"
+               app:autoSizeStepGranularity="1sp"
+               app:autoSizeTextType="uniform"
+               android:fontFamily="@font/poppins_bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+      ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Username"
+            android:textColor="#000000"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="5sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_medium"
+            />
+        <!--   android:layout_weight="2"-->
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/star"
+                android:gravity="top|left"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <EditText
+            android:paddingTop="5dp"
+            android:id="@+id/UsernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="abcd"
+            android:textColor="#000000"
+            android:textSize="16.05sp"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+      ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="13"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:weightSum="4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Activity Status"
+                        android:textSize="14.6dp"
+                        app:autoSizeMaxTextSize="100sp"
+                        app:autoSizeMinTextSize="5sp"
+                        app:autoSizeStepGranularity="1sp"
+                        app:autoSizeTextType="uniform"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/ActivityStatusSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|top"
+                        android:textOff="OFF"
+                        android:textOn="ON"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Allow matches to  see when you were last active"
+                    android:textSize="8.69dp"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeMinTextSize="5sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform"
+                    android:fontFamily="@font/poppins_regular"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Read Receipts"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeMinTextSize="5sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform"
+                    android:textSize="14.6dp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/ReadReceiptsSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="Turning off will prevent voice/ text message read updates"
+                android:textSize="8.69dp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform"
+                android:fontFamily="@font/poppins_regular"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    ></LinearLayout>
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Notifications"
+            android:textSize="13.71sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="5sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="13.71sp"
+            android:text="Email"
+            android:textColor="#000000"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="5sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_weight="1"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="13.71sp"
+            android:textColor="#000000"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="5sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Push Notifications"
+            android:layout_weight="1"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Team Amica"
+            android:textColor="#000000"
+            android:textSize="13.71sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="5sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       ></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:text="My Move"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="5sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            android:textSize="14.6dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/MyMoveSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:textOff="OFF"
+            android:textOn="ON"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="You will start a conversation with your matches"
+        android:textSize="8.69dp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="5sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        android:fontFamily="@font/poppins_regular"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Legal"
+        android:textSize="13.71sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="5sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Licenses"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="5sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        android:textColor="#000000"
+        android:textSize="13.71sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_weight="1"/>
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="#000000"
+        android:textSize="13.71sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="5sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/terms_conditions"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+      ></LinearLayout>
+
+  <Button
+      android:id="@+id/ShareBtn"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="2"
+      android:layout_marginLeft="70dp"
+      android:layout_marginRight="70dp"
+      android:text="share Amica"
+      android:textColor="#EF5D68"
+      android:textAllCaps="false"
+      android:fontFamily="@font/poppins_semibold"
+     android:background="@drawable/unfilled_rounded_corner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+     ></LinearLayout>
+
+    <Button
+        android:id="@+id/HelpSupportBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/help_support"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/rounded_corner"/>
+
+</LinearLayout>
